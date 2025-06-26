@@ -1,0 +1,319 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:aliceblue
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color:aquamarine;
+}
+header h1 { text-align: center;
+    position: static;
+    font-size: 80px;
+    color: rgb(83, 217, 94);
+    margin-top: 10px;
+    
+}
+header img { border-radius: 20px;
+    float: left;
+}
+header img:hover{background-color: aquamarine;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px blue;
+
+}
+header p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+  
+h1 {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  font-weight: bolder;
+
+}
+nav {
+    margin: 20px auto;
+    max-width: auto;
+    height: auto;
+}
+nav ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;
+}
+
+nav ul.menu li {
+    margin: 10px auto;
+    float: left;
+    width: 196px;
+    margin-left: 15px;
+    height: 50px;
+    background: aquamarine;
+    font-family: 'Kaushan Script', cursive;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 15px;
+    font-weight: bold;    
+}
+
+nav li:hover {
+    background-color: rgb(220, 220, 220);
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px blue;
+}
+
+nav li {
+    transition: all 0.2s ease-in-out;
+}
+
+nav li:active {
+    background-color: #414fce;
+}
+
+nav  ul.menu {
+    text-decoration: none;
+    
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+main p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    
+}
+
+
+.container_inicio {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+    margin: 30px 0;
+}
+
+
+.gallery img {
+    border-radius: 20px;
+    width: 100%; 
+    max-width: 300px; 
+    object-fit: cover; 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.gallery img:hover  {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.container_inicio p{
+   font-weight: bold;
+}
+div.carrusel {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin-top: 15px;
+}
+
+div.carrusel img {
+    width: 100%; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+section{
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    justify-content: baseline;
+}
+
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    border-radius: 15PX;
+}
+
+article h3 {
+    margin: 15px 0;
+    color: #444;
+    font-size: 1.5em;
+}
+
+article p {
+    font-size: 0.95em;
+    color: #666;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+article img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+  div.divArticle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+   
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+ /* Estilos para tienda.html */
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .gallery article {
+      display: grid;
+     width: 300px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .gallery p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .gallery article:hover {
+    transform: scale(1.1);
+    border: 1px solid black;    
+    background-color: #d8d8d8;
+  }
+
+
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+
+    .section {
+      margin-top: 30px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+    div.carrusel img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;}
+    div.divArticle p {
+     font-weight: bolder;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    font-weight: bolder;
+    background-color: #53c5a3ee;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 20px;
+}    
+  footer a:hover {
+    text-decoration: underline;    
+    color: rgb(136, 136, 136)}
+
+footer li { margin-bottom: 5px;}
+
+.footer-bottom p {
+    color: #e9b75b;
+    font-size: 20px;
+    margin-top: 10px;
+}  
+    
+   
+   
+    
